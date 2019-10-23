@@ -152,6 +152,139 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-java八种基本数据类型" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/23/java八种基本数据类型/">java八种基本数据类型</a>
+    </h1>
+  
+
+        
+        <a href="/2019/10/23/java八种基本数据类型/" class="archive-article-date">
+  	<time datetime="2019-10-23T13:31:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-23</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="八种基本数据类型"><a href="#八种基本数据类型" class="headerlink" title="八种基本数据类型"></a>八种基本数据类型</h2><p>字节（Byte）是计算机文件大小的基本计算单位，比特(Bit)是计算机运算的基础，也就是二进制中的一位，<br>1个字节（Byte）=8个位（Bit）,2个字节（Byte）=16位（Bit）..,在单位换算这方面，<br>1 Byte=8Bit,1Kb=1024Byte,1MB=1024Kb,1TB=1024 MB,1PB=1024TB<br>Java中八种基本数据类型:<br>1.字节型byte,占用1个字节，取值范围-128<del>127，默认值0；<br>2.短整型short,占用2个字节，取值范围-32768</del>32767，默认值0；<br>3.整型int,占用4个字节，取值范围-2147483648<del>2147483647，默认值0；<br>4.长整型long,占用8个字节，取值范围-9223372036854775808</del>922337203685477807,默认值0；<br>5.布尔型boolean,占用字节为不确定值，取值范围true or false,默认值为false；<br>6.字符型char,占用2个字节，取值范围0<del>65565,默认值’\u0000’,代表空格的意思<br>7.单精度浮点型float,占用4个字节，1.4E-45</del>3.4028235E38，默认值0.0F；<br>8.双精度浮点型double,占用8个字节，4.9E-324~1.7976931348623157E308，默认值为0.0D</p>
+<h2 id="类型转换的相关题目"><a href="#类型转换的相关题目" class="headerlink" title="类型转换的相关题目"></a>类型转换的相关题目</h2><p>byte b = 3;<br>b = b + 3;<br>System.out.println(b);<br>执行后，发现报了一个错误丢失精度，这是为什么呢，因为Java默认的整型的数据类型为int,所以当执行b=b+3这一行时，3为4个字节的int类型数据，而b为1个字节的byte类型数据，java底层会自动帮我将b提升int类型与3相加，那么问题就来了，右边是一个int类型的数据，左边是一个byte类型的变量，将int类型转换为byte类型显然会出现丢失精度的现象，于是我们可以强转b = (byte)(b + 3)，但是如果写成b+=3这样子的话,却不会报错，是因为其底层已经帮我们强制转换类型了。</p>
+<p>自增自减<br>a++代表a=a+1,++a也代表a=a+1但是在赋值时，如b=a++,代表着先取出a的值赋值给变量b，然后a再自增，b=++a;代表着a先自增，然后再取值赋值给变量b,自减亦如此。<br>看例子，<br>int a = 3;<br>a++;<br>System.out.println(a)//4<br>int b=3;<br>++b;<br>System.out.println(b);//4<br>int c = 3;<br>int d;<br>d = c++;<br>System.out.println(“d=”+d);//3<br>System.out.println(“c=”+c);//4<br>int e = 3;<br>int f;<br>f =++e;<br>System.out.println(“f=”+f);//4<br>System.out.println(“e=”+e); //4</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/10/23/java八种基本数据类型/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-javase进制转换" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/23/javase进制转换/">javase进制转换</a>
+    </h1>
+  
+
+        
+        <a href="/2019/10/23/javase进制转换/" class="archive-article-date">
+  	<time datetime="2019-10-23T13:24:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-23</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="java里的各种进制的表示"><a href="#java里的各种进制的表示" class="headerlink" title="java里的各种进制的表示"></a>java里的各种进制的表示</h2><p>Java里面，0b（开头）xxx代表二进制，0（开头）xxx代表八进制，0x（开头）xxx代表十六进制，二进制逢二进一，八进制逢八进一，十六进制亦如此，不过十六进制，10用a表示，11用b表示，以此类推。</p>
+<h2 id="各进制转换为十进制"><a href="#各进制转换为十进制" class="headerlink" title="各进制转换为十进制"></a>各进制转换为十进制</h2><p>公式：系数*基数的权次幂相加<br>系数就是每一位上的数，基数就是要转换的进制，权则是从右边0开始到该位数的编号。<br>二进制转换为十进制：<br>如将0b1001转换为十进制表示<br>1 * 2 ^ 3 + 0 * 2 ^ 2 + 0 * 2 ^ 1 + 1 * 2 ^ 0 = 9<br>八进制转换为十进制：<br>如将00010转换为十进制表示<br>0 * 8 ^ 3 + 0 * 8 ^ 2 + 1 * 8 ^ 1 + 0 * 8 ^ 0 = 8<br>十六进制转换为十进制<br>如将0x100转换为十进制表示<br>1 * 16 ^ 2 + 0 * 16 ^ 1 + 0 * 16 ^ 0 = 256</p>
+<h2 id="十进制转换为各进制"><a href="#十进制转换为各进制" class="headerlink" title="十进制转换为各进制"></a>十进制转换为各进制</h2><p>原理：原数除于进制再倒过来取结果<br>十进制转换为二进制：<br>如将80转换为二进制表示<br>80 /2=40…..0<br>40/2=20……0<br>20/2=10……0<br>10/2=5……0<br>5/2=2……..1<br>2/2=1……..0<br>1/2=0……..1<br>故结果为：1010000</p>
+<p>十进制转换为八进制：<br>如将80转换为八进制表示<br>80/8=10…..0<br>10/8=1……2<br>1/8=0…..1<br>故结果为120 </p>
+<p>十进制转换为十六进制：<br>如将80转换为十六进制表示<br>80/16=5…..0<br>5/16=0……5<br>故结果为50</p>
+<h2 id="原码，反码和补码"><a href="#原码，反码和补码" class="headerlink" title="原码，反码和补码"></a>原码，反码和补码</h2><p>计算机底层在做+-*/等一些列运算时都是靠补码来操作的<br>正数的补码就是原码，反码就是各位按位取反，符号位除外,第一位为符号位，为0时代表为正数，为1时代表负数。<br>原码01000001，其反码为00111110，补码为01000001。<br>负数反码也是按位取反，符号位除外，补码就是原码取反再加1。<br>原码10000010，其反码为11111101，补码为11111110。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/10/23/javase进制转换/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-dtree的简单使用" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -313,81 +446,6 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2019/10/09/jdk的安装以及环境变量的配置/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/09/hello-world/">Hello World</a>
-    </h1>
-  
-
-        
-        <a href="/2019/10/09/hello-world/" class="archive-article-date">
-  	<time datetime="2019-10-09T05:24:17.546Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-09</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/10/09/hello-world/">展开全文 >></a>
         </p>
       
 

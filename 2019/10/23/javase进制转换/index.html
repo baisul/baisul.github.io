@@ -6,25 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>jdk的安装以及环境变量的配置 | Hexo</title>
+  <title>javase进制转换 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1.去oracle官网下载jdk1.8版本，不要直接搜索java,搜java下载完jdk后很有可能还要下载jre,在oracle下载jdk时你可以选择jdk和jre一起下载的，jdk下载网址：https://www.oracle.com/technetwork/java/javase/downloads/index.html  2.下载exe文件，然后一直点继续安装即可3.配置环境变量3.1）右击">
+  <meta name="description" content="java里的各种进制的表示Java里面，0b（开头）xxx代表二进制，0（开头）xxx代表八进制，0x（开头）xxx代表十六进制，二进制逢二进一，八进制逢八进一，十六进制亦如此，不过十六进制，10用a表示，11用b表示，以此类推。 各进制转换为十进制公式：系数*基数的权次幂相加系数就是每一位上的数，基数就是要转换的进制，权则是从右边0开始到该位数的编号。二进制转换为十进制：如将0b1001转换为十">
 <meta property="og:type" content="article">
-<meta property="og:title" content="jdk的安装以及环境变量的配置">
-<meta property="og:url" content="http://yoursite.com/2019/10/09/jdk的安装以及环境变量的配置/index.html">
+<meta property="og:title" content="javase进制转换">
+<meta property="og:url" content="http://yoursite.com/2019/10/23/javase进制转换/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="1.去oracle官网下载jdk1.8版本，不要直接搜索java,搜java下载完jdk后很有可能还要下载jre,在oracle下载jdk时你可以选择jdk和jre一起下载的，jdk下载网址：https://www.oracle.com/technetwork/java/javase/downloads/index.html  2.下载exe文件，然后一直点继续安装即可3.配置环境变量3.1）右击">
+<meta property="og:description" content="java里的各种进制的表示Java里面，0b（开头）xxx代表二进制，0（开头）xxx代表八进制，0x（开头）xxx代表十六进制，二进制逢二进一，八进制逢八进一，十六进制亦如此，不过十六进制，10用a表示，11用b表示，以此类推。 各进制转换为十进制公式：系数*基数的权次幂相加系数就是每一位上的数，基数就是要转换的进制，权则是从右边0开始到该位数的编号。二进制转换为十进制：如将0b1001转换为十">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="http://yoursite.com/2019/10/09/jdk的安装以及环境变量的配置/jdk_001.jpg">
-<meta property="og:image" content="http://yoursite.com/2019/10/09/jdk的安装以及环境变量的配置/jdk_002.jpg">
-<meta property="og:image" content="http://yoursite.com/2019/10/09/jdk的安装以及环境变量的配置/jdk_003.jpg">
-<meta property="og:image" content="http://yoursite.com/2019/10/09/jdk的安装以及环境变量的配置/jdk_004.jpg">
-<meta property="og:image" content="http://yoursite.com/2019/10/09/jdk的安装以及环境变量的配置/jdk_005.jpg">
-<meta property="og:updated_time" content="2019-10-09T09:26:50.705Z">
+<meta property="og:updated_time" content="2019-10-23T13:29:56.975Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="jdk的安装以及环境变量的配置">
-<meta name="twitter:description" content="1.去oracle官网下载jdk1.8版本，不要直接搜索java,搜java下载完jdk后很有可能还要下载jre,在oracle下载jdk时你可以选择jdk和jre一起下载的，jdk下载网址：https://www.oracle.com/technetwork/java/javase/downloads/index.html  2.下载exe文件，然后一直点继续安装即可3.配置环境变量3.1）右击">
-<meta name="twitter:image" content="http://yoursite.com/2019/10/09/jdk的安装以及环境变量的配置/jdk_001.jpg">
+<meta name="twitter:title" content="javase进制转换">
+<meta name="twitter:description" content="java里的各种进制的表示Java里面，0b（开头）xxx代表二进制，0（开头）xxx代表八进制，0x（开头）xxx代表十六进制，二进制逢二进一，八进制逢八进一，十六进制亦如此，不过十六进制，10用a表示，11用b表示，以此类推。 各进制转换为十进制公式：系数*基数的权次幂相加系数就是每一位上的数，基数就是要转换的进制，权则是从右边0开始到该位数的编号。二进制转换为十进制：如将0b1001转换为十">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -160,36 +154,33 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-jdk的安装以及环境变量的配置" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-javase进制转换" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      jdk的安装以及环境变量的配置
+      javase进制转换
     </h1>
   
 
         
-        <a href="/2019/10/09/jdk的安装以及环境变量的配置/" class="archive-article-date">
-  	<time datetime="2019-10-09T08:56:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-09</time>
+        <a href="/2019/10/23/javase进制转换/" class="archive-article-date">
+  	<time datetime="2019-10-23T13:24:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-23</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>1.去oracle官网下载jdk1.8版本，不要直接搜索java,搜java下载完jdk后很有可能还要下载jre,在oracle下载jdk时你可以选择jdk和jre一起下载的，jdk下载网址：<br><a href="https://www.oracle.com/technetwork/java/javase/downloads/index.html" target="_blank" rel="noopener">https://www.oracle.com/technetwork/java/javase/downloads/index.html</a></p>
-<img src="/2019/10/09/jdk的安装以及环境变量的配置/jdk_001.jpg" title="jdk下载地址">
-<p>2.下载exe文件，然后一直点继续安装即可<br>3.配置环境变量<br>3.1）右击此电脑，点击属性</p>
-<img src="/2019/10/09/jdk的安装以及环境变量的配置/jdk_002.jpg" title="电脑属性">
-<p>3.2）点击高级系统设置，再单击环境变量，在系统变量那里新建一个变量名为JAVA_HOME，值为jdk安装的路径</p>
-<img src="/2019/10/09/jdk的安装以及环境变量的配置/jdk_003.jpg" title="设置和修改环境变量">
-<p>3.3）然后，还是在系统变量那里，编辑PATH变量，添加bin</p>
-<img src="/2019/10/09/jdk的安装以及环境变量的配置/jdk_004.jpg" title="在PATH变量里添加bin">
-<p>4.win10打开cmd,输入java -version，显示结果如下则显示jdk安装成功</p>
-<img src="/2019/10/09/jdk的安装以及环境变量的配置/jdk_005.jpg" title="jdk安装成功">
+        <h2 id="java里的各种进制的表示"><a href="#java里的各种进制的表示" class="headerlink" title="java里的各种进制的表示"></a>java里的各种进制的表示</h2><p>Java里面，0b（开头）xxx代表二进制，0（开头）xxx代表八进制，0x（开头）xxx代表十六进制，二进制逢二进一，八进制逢八进一，十六进制亦如此，不过十六进制，10用a表示，11用b表示，以此类推。</p>
+<h2 id="各进制转换为十进制"><a href="#各进制转换为十进制" class="headerlink" title="各进制转换为十进制"></a>各进制转换为十进制</h2><p>公式：系数*基数的权次幂相加<br>系数就是每一位上的数，基数就是要转换的进制，权则是从右边0开始到该位数的编号。<br>二进制转换为十进制：<br>如将0b1001转换为十进制表示<br>1 * 2 ^ 3 + 0 * 2 ^ 2 + 0 * 2 ^ 1 + 1 * 2 ^ 0 = 9<br>八进制转换为十进制：<br>如将00010转换为十进制表示<br>0 * 8 ^ 3 + 0 * 8 ^ 2 + 1 * 8 ^ 1 + 0 * 8 ^ 0 = 8<br>十六进制转换为十进制<br>如将0x100转换为十进制表示<br>1 * 16 ^ 2 + 0 * 16 ^ 1 + 0 * 16 ^ 0 = 256</p>
+<h2 id="十进制转换为各进制"><a href="#十进制转换为各进制" class="headerlink" title="十进制转换为各进制"></a>十进制转换为各进制</h2><p>原理：原数除于进制再倒过来取结果<br>十进制转换为二进制：<br>如将80转换为二进制表示<br>80 /2=40…..0<br>40/2=20……0<br>20/2=10……0<br>10/2=5……0<br>5/2=2……..1<br>2/2=1……..0<br>1/2=0……..1<br>故结果为：1010000</p>
+<p>十进制转换为八进制：<br>如将80转换为八进制表示<br>80/8=10…..0<br>10/8=1……2<br>1/8=0…..1<br>故结果为120 </p>
+<p>十进制转换为十六进制：<br>如将80转换为十六进制表示<br>80/16=5…..0<br>5/16=0……5<br>故结果为50</p>
+<h2 id="原码，反码和补码"><a href="#原码，反码和补码" class="headerlink" title="原码，反码和补码"></a>原码，反码和补码</h2><p>计算机底层在做+-*/等一些列运算时都是靠补码来操作的<br>正数的补码就是原码，反码就是各位按位取反，符号位除外,第一位为符号位，为0时代表为正数，为1时代表负数。<br>原码01000001，其反码为00111110，补码为01000001。<br>负数反码也是按位取反，符号位除外，补码就是原码取反再加1。<br>原码10000010，其反码为11111101，补码为11111110。</p>
+
       
 
       
@@ -268,7 +259,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/10/09/jdk的安装以及环境变量的配置/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/10/23/javase进制转换/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -282,15 +273,20 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/10/09/dtree的简单使用/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2019/10/23/java八种基本数据类型/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          dtree的简单使用
+          java八种基本数据类型
         
       </div>
     </a>
   
+  
+    <a href="/2019/10/09/dtree的简单使用/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">dtree的简单使用</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
