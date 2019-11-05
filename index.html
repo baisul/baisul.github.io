@@ -152,6 +152,75 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-java集合体系" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/11/05/java集合体系/">java集合体系</a>
+    </h1>
+  
+
+        
+        <a href="/2019/11/05/java集合体系/" class="archive-article-date">
+  	<time datetime="2019-11-05T14:47:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-05</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Collection是根接口，其下有两个常用的子接口，一个是List接口，一个是Set接口,List集合的基本特点是：有序，允许元素为空，允许元素重复，有索引值，从0开始。Set集合的基本特点是：无序，不允许元素重复，允许元素为空。</p>
+<img src="/2019/11/05/java集合体系/集合001.png">
+<p>1.List接口的实现类之一，ArrayList:<br>底层是基于数组实现的，查找和修改快，增加和删除慢，线程不安全，效率高<br>2.List接口的实现类之二，LinkedList:<br>底层是基于链表实现的，每一个元素都存放了上一个元素和下一个元素的地址值，除了第一个元素和最后一个元素，增加和删除快，查询和修改慢，线程不安全，效率高<br>3.List接口的实现类之三，Vector:<br>底层是基于数组实现的，线程安全的，效率低。<br>4.Set接口之一，HashSet:<br>底层是基于哈希算法来实现的，无序，保证元素的唯一性<br>5.HashSet的子类，LinkedHashSet:<br>为了保证元素的唯一且有序，LinkedHahSet也应由而生。<br>6.Set接口之二，TreeSet:<br>底层是基于二叉树实现的，TreeSet主要用来排序元素的，可以保证元素的唯一性，二叉树默认的排序方式是，第一个进来的元素作为根元素，以后进来的元素与根元素比较，比之大，放在右边，比之小，放在左边</p>
+<hr>
+<p>Map是根接口，其下有常见的两个实现类，一个是HashMap,一个是TreeMap,HashMap的基本特点是：双列集合，以key和value值的形式保存元素，允许key(键)和value(值)为空，无序。</p>
+<img src="/2019/11/05/java集合体系/集合002.png">
+<p>1.HashMap 底层基于哈希算法，存的元素无序，JDK1.2出现，是线程不安全的，效率高，可以存储空键和空值<br>2.HasTable 底层基于哈希算法，存的元素无序，JDK1.0出现，线程安全的，效率低，不可以存储空键和空值<br>3.TreeMap    底层基于二叉树，主要用来对元素进行排序，我们要在new TreeMap时传入一个比较器。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/11/05/java集合体系/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-java八种基本数据类型" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -446,6 +515,81 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2019/10/09/jdk的安装以及环境变量的配置/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/09/hello-world/">Hello World</a>
+    </h1>
+  
+
+        
+        <a href="/2019/10/09/hello-world/" class="archive-article-date">
+  	<time datetime="2019-10-09T05:24:17.546Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-09</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/10/09/hello-world/">展开全文 >></a>
         </p>
       
 
